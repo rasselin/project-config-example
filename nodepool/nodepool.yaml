@@ -21,7 +21,7 @@ gearman-servers:
 labels:
   - name: d-p-c
     image: dpc
-    min-ready: 1
+    min-ready: 2
     providers:
       - name: local_01
 
@@ -42,7 +42,7 @@ diskimages:
 providers:
   - name: local_01
     cloud: local_cloud
-    max-servers: 1
+    max-servers: 4
     images:
       - name: dpc
         min-ram: 8192
